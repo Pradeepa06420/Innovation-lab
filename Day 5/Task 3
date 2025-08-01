@@ -1,0 +1,47 @@
+Basic Destructuring
+let student = {
+  name: "Pradeepa",
+  age: 19,
+  course: "Computer Technology"
+};
+
+let { name, age, course } = student;
+console.log("Name:", name);        
+console.log("Age:", age);          
+console.log("Course:", course);    
+
+/
+let user = {
+  username: "pradee123"
+};
+
+let { username, email = "gmail.com" } = user;
+console.log("Username:", username);  
+console.log("Email:", email);        
+
+let employee = {
+  id: 101,
+  name: "Kathir",
+  address: {
+    city: "Chennai",
+    pincode: 600001
+  }
+};
+
+let { address: { city, pincode } } = employee;
+console.log("City:", city);         
+console.log("Pincode:", pincode);  
+
+let original = {
+  a: 1,
+  b: 2
+};
+
+let clone = { ...original };
+console.log("Cloned Object:", clone); 
+
+let obj1 = { x: 10, y: 20 };
+let obj2 = { y: 30, z: 40 };
+
+let merged = { ...obj1, ...obj2 };
+console.log("Merged Object:", merged);  

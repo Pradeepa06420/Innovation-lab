@@ -1,0 +1,32 @@
+1.filter() returns a new array containing 
+only the elements that pass the test 
+from a function you provide.
+
+2.reduce() is used to reduce an array to a 
+single value (like sum, product, etc.) 
+by running a function on each element and 
+accumulating the result.
+syntax:
+array.reduce(function(accumulator, currentValue), 
+initialValue)
+
+3.splice() is used to add, remove, 
+or replace elements in an array.
+slice(): is used to extract a
+portion of the array without changing the original.
+
+4.The spread operator is used to:
+Clone arrays/objects
+Merge arrays/objects
+Expand elements (e.g., in function calls)
+
+5.A method is just a function defined 
+inside an object.
+syntax:
+let student = {
+  name: "Pradeepa",
+  sayHello() {
+    console.log("Hi!");
+  }
+};
+

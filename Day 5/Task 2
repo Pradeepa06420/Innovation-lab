@@ -1,0 +1,31 @@
+let student = {
+  name: "Pradeepa",
+  age: 19,
+  course: "Computer Technology",
+  
+  
+  displayInfo: function() {
+    console.log(`Name: ${this.name}`);
+    console.log(`Age: ${this.age}`);
+    console.log(`Course: ${this.course}`);
+  }
+};
+student.displayInfo();
+
+console.log("Student Name:", student.name);      
+console.log("Student Age:", student["age"]);      
+
+student.age = 20;
+student.course = "Cybersecurity";
+
+console.log("\nAfter modification:");
+student.displayInfo();
+
+student.college = "ABC College";
+console.log("College:", student.college
+
+student.isAdult = function() {
+  return this.age >= 18;
+};
+
+console.log("Is adult?", student.isAdult());  // Output: true
